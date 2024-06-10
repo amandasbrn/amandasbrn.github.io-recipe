@@ -1,0 +1,122 @@
+header h1 {
+    font-size: 50px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+header h2 {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align:justify;
+
+}
+
+main {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: white;
+    padding: 30px;
+    border-radius: 35px;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 20px;
+    color: hsl(24, 5%, 18%);
+    padding: 20px;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+.prep {
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.ingredients, .instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    border-width: auto;
+    padding-left: 20px;
+}
+
+.nutrition {
+    padding-left: 20px;
+}
+
+.prep h3 {
+    font-size: 26px;
+    color: hsl(332, 51%, 32%);
+}
+
+.prep li, .ingredients li, .instructions li {
+    padding: 8px;
+}
+
+.ingredients h3, .instructions h3, .nutrition h3{
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 28px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 35px;
+    display: block;
+    padding: 2px;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol li {
+    list-style-type: none;
+    position: relative;
+}
+
+ol li::before {
+    counter-increment: item;
+    content: counter(item) ". ";
+    font-weight: bold;
+    position: absolute;
+    left: -1.5em; /* Adjust based on your padding/margin */
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td, th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+td {
+    padding-left: 20px;
+}
+
+footer {
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+}
